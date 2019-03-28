@@ -86,11 +86,10 @@ audio,
 video {
 	margin: 0;
 	padding: 0;
-	border: 2px solid green;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -126,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
+	content: "";
 	content: none;
 }
 
@@ -143,7 +142,7 @@ table {
 html,
 body {
 	height: 100%;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: "Titillium Web", sans-serif;
 }
 
 h1,
@@ -151,9 +150,119 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: 'Bangers', cursive;
+	font-family: "Bangers", cursive;
 	letter-spacing: 1px;
 	margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 10px 50px;
+}
+
+nav {
+	display: inline-block;
+	margin: 0 0 10px 10px;
+}
+
+.nav-item {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1rem;
+	padding: 0px 5px 10px 5px;
+	margin: 0 40px 10px 0;
+	color: gray;
+	text-decoration: none;
+}
+
+.nav-item:hover {
+	color: dodgerblue;
+}
+
+header {
+	box-sizing: border-box;
+}
+
+.logo {
+	display: inline-block;
+	margin: 10px 0 0 70px;
+}
+
+.h1andbutton {
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+}
+
+.main-heading {
+	text-align: center;
+	font-size: 4rem;
+	margin: 0px 0 20px 0;
+	vertical-align: ;
+}
+
+.button {
+	display: inline-block;
+	border: 2px solid #000;
+	color: #000;
+	padding: 8px 40px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-top: -0px;
+	margin-left: 0px;
+}
+
+img.header-image {
+	display: inline-block;
+	margin: 50px 0 50px 210px;
+}
+
+.top-content {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.p1 {
+	display: inline-block;
+	width: 450px;
+	padding: 30px;
+}
+
+.bottom-content {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.p2 {
+	display: inline-block;
+	width: 305px;
+	padding: 30px;
+}
+
+.middle-img {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.image-holder {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.contact {}
+
+footer {
+	padding: 20px 0;
+	text-align: center;
+}
